@@ -1,0 +1,5 @@
+ <ul>
+    <%  @classes.each do |classe| %>
+        <li><%= link_to classe.title, school_class_path(classe.id) %></li>
+    <% end %>
+</ul>

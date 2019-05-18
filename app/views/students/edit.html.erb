@@ -1,0 +1,21 @@
+<h3> Student Form </h3>
+<hr>
+<br>
+<%= form_for @student do |f| %>
+  <%= f.label :first_name, "Enter First Name" %>
+  <%= f.text_field :first_name %>
+  <br>
+  <br>
+  <br>
+
+  <%= f.label :last_name, "Enter Last Name" %>
+  <%= f.text_field :last_name %>
+
+  <br>
+  <br>
+  <br>
+
+
+  <%= submit_tag "Update Student" %>
+
+<% end %>
