@@ -1,0 +1,12 @@
+<h3>All of the students</h3>
+<hr>
+<br>
+<br>
+<br>
+<ul>
+    <% @students.each do |student| %>
+        <li><%= link_to student.to_s, student_path(student.id) %></li>
+        <br>
+        <br>
+    <% end %>
+</ul>
